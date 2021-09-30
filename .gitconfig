@@ -1,0 +1,19 @@
+[alias]
+  co = checkout                                                    # Just alias for
+  lg = log --all --graph --decorate --oneline --abbrev-commit      # Just alias for
+  st = status                                                      # Just alias for
+  cm = commit                                                      # Just alias for
+  cmm = commit -m                                                  # Just alias for
+
+  ft = fetch --all                                                 # Just alias for
+  amend = cm --amend                                               # Just alias for
+
+  dismiss = reset HEAD --hard                                      # Clear changes in Workspace (Usage: git dismiss)
+  rollback = reset --soft HEAD~1                                   # Undo your last commit and put files in stage (Usage: git rollback)
+  unstage = reset HEAD --                                          # Remove file from stage (Usage: git unstage path/to/filename.ext)
+  undo = checkout --                                               # Undo changes on file (Usage: git undo path/to/filename.ext)
+  redo = amend --no-edit                                           # Put new changes in last commit (Usage: git add path/to/filename.ext && git redo)
+  sane = remote prune origin                                       # Clear olds branchs in local (Usage: git sane)
+
+[core]
+  commentChar = ";"                                                # Change char comment # to ; when you using `ammend`
