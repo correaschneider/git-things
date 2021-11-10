@@ -1,3 +1,8 @@
+[user]
+	name = Your Name
+	username = your.user.git
+	email = your@email.com
+
 [alias]
   co = checkout                                                    # Just alias for
   lg = log --all --graph --decorate --oneline --abbrev-commit      # Just alias for
@@ -17,3 +22,6 @@
 
 [core]
   commentChar = ";"                                                # Change char comment # to ; when you using `ammend`
+  
+[includeIf "gitdir:~/path/to/company/folder/"]                     # Verification if command git is running in this path 
+  path = .gitconfig-company                                        # Case true, load this file config, located in $HOME (˜/)
