@@ -1,7 +1,7 @@
 [user]
-	name = Your Name
-	username = your.user.git
-	email = your@email.com
+  name = Your Name
+  username = your.user.git
+  email = your@email.com
 
 [alias]
   co = checkout                                                    # Just alias for
