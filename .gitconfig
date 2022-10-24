@@ -20,6 +20,8 @@
   redo = amend --no-edit                                           # Put new changes in last commit (Usage: git add path/to/filename.ext && git redo)
   sane = remote prune origin                                       # Clear olds branchs in local (Usage: git sane)
 
+  all-sub = submodule foreach --recursive                           # Execute a command in all submodules (Usage: git allsub git status | git allsub ls)
+
 [core]
   commentChar = ";"                                                # Change char comment # to ; when you using `ammend`
   
